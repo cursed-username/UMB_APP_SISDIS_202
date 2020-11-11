@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/kataras/iris/v12"
+	"ihojose.com/sisdis/api"
 	"log"
 )
 
@@ -20,10 +21,18 @@ func main() {
 	app := iris.New()
 
 	// Route APIs
-	// TODO: API
+	Api(app)
 
 	// Run Web Server
-	if err := app.Listen(":8080"); err != nil {
+	if err := app.Listen(":8042"); err != nil {
 		log.Panicln("Unexpected error in Recommendations API:", err)
+	}
+}
+
+func Api(app *iris.Application) {
+
+	reco := app.Party("recommendation")
+	{
+		reco.Get("", api.GetRecommendation)
 	}
 }
