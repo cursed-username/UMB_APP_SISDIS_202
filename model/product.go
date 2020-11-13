@@ -18,4 +18,5 @@ type Product struct {
 	Discount    float64 `json:"discount"`
 	Description string  `json:"description"`
 	Alt         string  `json:"alt"`
+	Category    string  `json:"category"`
 }

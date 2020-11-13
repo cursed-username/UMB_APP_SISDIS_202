@@ -83,8 +83,9 @@ Endpoint: `{host}/recommendation`
     "name": "Producto de ejemplo",
     "price": 14525,
     "discount": 0,
-    "description": "Lorem ipsum dolor sit amet",
-    "alt": "short description"
+    "description": "descripción completa",
+    "alt": "descripción corta",
+    "category": "grocery"
   }
 ]
 ```
