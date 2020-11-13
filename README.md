@@ -75,7 +75,7 @@ Parámetros neviados como Query Parameters.
 Endpoint: `{host}/recommendation`
 
 **Resultado:**
-```
+```json
 [
   {
     "id": 123,
