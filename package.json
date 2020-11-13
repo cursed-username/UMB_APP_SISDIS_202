@@ -1,0 +1,26 @@
+{
+  "name": "umb_app_sisdis_202",
+  "version": "1.0.0",
+  "description": "Desarrollo de una app distribuida por medio de microservicios en apache kafka",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon mvc/Controller/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastianamayag/UMB_APP_SISDIS_202.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastianamayag/UMB_APP_SISDIS_202/issues"
+  },
+  "homepage": "https://github.com/Sebastianamayag/UMB_APP_SISDIS_202#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5"
+  }
+}
