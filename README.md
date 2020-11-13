@@ -48,6 +48,13 @@ $ docker logs -f sisdis
 
 **NOTA:** el nombre `sisdis` puede cambiar según sea asignado por Docker al final de la compilación
 
+### Kafka Topic
+Creación de Topic Kafka.
+
+```
+$ kafka-topics --create --topic recommendations --zookeeper localhost:8042 --replication-factor 1 --partitions 4
+```
+
 ## Api
 ### Endpoints
 | Endpoint | Método |
@@ -63,6 +70,24 @@ Parámetros neviados como Query Parameters.
 | `u` | `string` | | Id del usuario a quien se le darán las recomandaciones.
 | `p` | `number` | | Id del producto que se está visualizando, así se hacen recomendaciones según el producto que se está visualizando.
 | `l` | `number` | 3 | Límite de la respuesta que se mostrará, este valor permite mostrar la cantidad necesaria de recomendaciones.
+
+### Prueba de API
+Endpoint: `{host}/recommendation`
+
+**Resultado:**
+```
+[
+  {
+    "id": 123,
+    "image": "https://host/product/image/123.png",
+    "name": "Producto de ejemplo",
+    "price": 14525,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet",
+    "alt": "short description"
+  }
+]
+```
 
 ## Dependencias del proyecto
 Meramente informativo, el proyecto descarga estas dependencias automaticamente:

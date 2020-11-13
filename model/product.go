@@ -11,7 +11,11 @@ package model
  */
 
 type Product struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Price string `json:"price"`
+	ID          int64   `json:"id"`
+	Image       string  `json:"image"`
+	Name        string  `json:"name"`
+	Price       float64 `json:"price"`
+	Discount    float64 `json:"discount"`
+	Description string  `json:"description"`
+	Alt         string  `json:"alt"`
 }
