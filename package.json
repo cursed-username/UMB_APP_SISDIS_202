@@ -4,16 +4,24 @@
   "description": "Desarrollo de una app distribuida por medio de microservicios en apache kafka",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon mvc/Controller/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katanac/UMB_APP_SISDIS_202.git"
+    "url": "git+https://github.com/katanac/UMB_APP_SISDIS_202.git",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/katanac/UMB_APP_SISDIS_202/issues"
   },
-  "homepage": "https://github.com/katanac/UMB_APP_SISDIS_202#readme"
+  "homepage": "https://github.com/katanac/UMB_APP_SISDIS_202#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5"
+  }
 }
