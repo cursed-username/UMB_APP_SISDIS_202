@@ -3,4 +3,4 @@ services:
   sisdis:
     build: .
     ports:
-    - 8080:8080
+    - 8042:8042

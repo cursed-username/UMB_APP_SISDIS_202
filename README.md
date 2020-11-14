@@ -5,6 +5,16 @@ Desarrollo de una app distribuida por medio de microservicios en apache kafka
 * Jose Buelvas
 * Alessandro Nuñez
 
+## Contenido
+1. [Funcionalidades](#funcionalidades)
+2. [Instrucciones de instalación](#instrucciones-de-instalacin)
+    1. [Desarrollo](#desarrollo)
+    2. [Docker](#docker)
+3. [Api](#api)
+    1. [Endpoints](#endpoints)
+    2. [Parámetros](#parmetros)
+4. [Dependencias del proyecto](#dependencias-del-proyecto)
+
 ## Funcionalidades
 1. El servicio usará las compras recientes del usuario para revisar las categorías de producto.
 2. Usando las categorías de los productos del historial de compras del usuario el servicio hará una búsqueda de productos en dicha categoría para recomendarlos.
@@ -37,6 +47,48 @@ $ docker logs -f sisdis
 ```
 
 **NOTA:** el nombre `sisdis` puede cambiar según sea asignado por Docker al final de la compilación
+
+### Kafka Topic
+Creación de Topic Kafka.
+
+```
+$ kafka-topics --create --topic recommendations --zookeeper localhost:8042 --replication-factor 1 --partitions 4
+```
+
+## Api
+### Endpoints
+| Endpoint | Método |
+| -------- | ------ |
+| {host}/recommendation | `GET` |
+
+#### Parámetros
+Parámetros neviados como Query Parameters.
+
+| Parámetro | Tipo | Defecto | Descripción |
+| --------- | ---- | ------- | ----------- | 
+| | | | Si no se envía nada entonces se mostrarán productos al azar.
+| `u` | `string` | | Id del usuario a quien se le darán las recomandaciones.
+| `p` | `number` | | Id del producto que se está visualizando, así se hacen recomendaciones según el producto que se está visualizando.
+| `l` | `number` | 3 | Límite de la respuesta que se mostrará, este valor permite mostrar la cantidad necesaria de recomendaciones.
+
+### Prueba de API
+Endpoint: `{host}/recommendation`
+
+**Resultado:**
+```json
+[
+  {
+    "id": 123,
+    "image": "https://host/product/image/123.png",
+    "name": "Producto de ejemplo",
+    "price": 14525,
+    "discount": 0,
+    "description": "descripción completa",
+    "alt": "descripción corta",
+    "category": "grocery"
+  }
+]
+```
 
 ## Dependencias del proyecto
 Meramente informativo, el proyecto descarga estas dependencias automaticamente:
