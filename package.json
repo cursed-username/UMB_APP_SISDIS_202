@@ -8,14 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sebastianamayag/UMB_APP_SISDIS_202.git"
+    "url": "git+https://github.com/katanac/UMB_APP_SISDIS_202.git",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sebastianamayag/UMB_APP_SISDIS_202/issues"
+    "url": "https://github.com/katanac/UMB_APP_SISDIS_202/issues"
   },
-  "homepage": "https://github.com/Sebastianamayag/UMB_APP_SISDIS_202#readme",
+  "homepage": "https://github.com/katanac/UMB_APP_SISDIS_202#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
