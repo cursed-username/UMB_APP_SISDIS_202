@@ -13,7 +13,6 @@ app.get('/shipping',(req,res)=>{
 });
 //crear el envio
 app.post('/shipping/new',async(req,res)=>{
-    console.log(req.body);
     Shipping.create({
         producto:req.body.producto,
         pais_origen:req.body.paisorigen,
