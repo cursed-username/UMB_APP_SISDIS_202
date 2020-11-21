@@ -2,7 +2,10 @@ package kafka
 
 import (
 	"context"
+	"encoding/json"
 	"github.com/segmentio/kafka-go"
+	"github.com/segmentio/kafka-go/snappy"
+	"ihojose.com/sisdis/includes"
 	"time"
 )
 
@@ -15,18 +18,48 @@ import (
  * @year          2020
  * @donations     buymeacoff.ee/ihojose
  */
-
-// Publisher an instance that publish messages
-type Publisher interface {
-
-	// Publish publish a message into a stream
-	Publish(ctx context.Context, payload interface{}) error
+type publisher struct {
+	writer *kafka.Writer
 }
 
-func NewPublisher(broker []string, topic string) Publisher {
-	_ = &kafka.Dialer{
-		Timeout: 10 * time.Second,
+func NewPublisher(brokers []string, topic string) includes.Publisher {
+	dialer := &kafka.Dialer{
+		Timeout:  10 * time.Second,
+		ClientID: clientID,
 	}
 
-	return nil
+	// In Next Version we will fix deprecated method
+	c := kafka.WriterConfig{
+		Brokers:          brokers,
+		Topic:            topic,
+		Balancer:         &kafka.LeastBytes{},
+		Dialer:           dialer,
+		WriteTimeout:     10 * time.Second,
+		ReadTimeout:      10 * time.Second,
+		CompressionCodec: snappy.NewCompressionCodec(),
+	}
+
+	return &publisher{kafka.NewWriter(c)}
+}
+
+func (p *publisher) Publish(ctx context.Context, payload interface{}) error {
+	message, err := p.encodeMessage(payload)
+	if err != nil {
+		return err
+	}
+
+	return p.writer.WriteMessages(ctx, message)
+}
+
+func (p *publisher) encodeMessage(payload interface{}) (kafka.Message, error) {
+	m, err := json.Marshal(payload)
+	if err != nil {
+		return kafka.Message{}, err
+	}
+
+	key := includes.Ulid()
+	return kafka.Message{
+		Key:   []byte(key),
+		Value: m,
+	}, nil
 }

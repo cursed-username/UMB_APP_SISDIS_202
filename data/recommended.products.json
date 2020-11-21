@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "image": "http://localhost:port/product/1.jpg",
+    "name": "Producto 1",
+    "price": 15000,
+    "discount": 0,
+    "description": "Ejemplo de producto 1",
+    "alt": "p1",
+    "category": "1"
+  },
+  {
+    "id": 2,
+    "image": "http://localhost:port/product/2.jpg",
+    "name": "Producto 2",
+    "price": 1000,
+    "discount": 0,
+    "description": "Ejemplo de producto 2",
+    "alt": "p2",
+    "category": "1"
+  },
+  {
+    "id": 3,
+    "image": "http://localhost:port/product/3.jpg",
+    "name": "Producto 3",
+    "price": 85000,
+    "discount": 0,
+    "description": "Ejemplo de producto 3",
+    "alt": "p3",
+    "category": "2"
+  },
+  {
+    "id": 4,
+    "image": "http://localhost:port/product/4.jpg",
+    "name": "Producto 4",
+    "price": 15000,
+    "discount": 0,
+    "description": "Ejemplo de producto 4",
+    "alt": "p1",
+    "category": "2"
+  },
+  {
+    "id": 5,
+    "image": "http://localhost:port/product/5.jpg",
+    "name": "Producto 5",
+    "price": 15000,
+    "discount": 0,
+    "description": "Ejemplo de producto 5",
+    "alt": "p5",
+    "category": "3"
+  },
+  {
+    "id": 6,
+    "image": "http://localhost:port/product/6.jpg",
+    "name": "Producto 6",
+    "price": 15000,
+    "discount": 0,
+    "description": "Ejemplo de producto 6",
+    "alt": "p6",
+    "category": "4"
+  },
+  {
+    "id": 7,
+    "image": "http://localhost:port/product/7.jpg",
+    "name": "Producto 7",
+    "price": 75000,
+    "discount": 0,
+    "description": "Ejemplo de producto 7",
+    "alt": "p7",
+    "category": "3"
+  },
+  {
+    "id": 8,
+    "image": "http://localhost:port/product/8.jpg",
+    "name": "Producto 8",
+    "price": 85000,
+    "discount": 0,
+    "description": "Ejemplo de producto 8",
+    "alt": "p8",
+    "category": "5"
+  },
+  {
+    "id": 9,
+    "image": "http://localhost:port/product/9.jpg",
+    "name": "Producto 9",
+    "price": 95000,
+    "discount": 0,
+    "description": "Ejemplo de producto 9",
+    "alt": "p9",
+    "category": "1"
+  },
+  {
+    "id": 10,
+    "image": "http://localhost:port/product/10.jpg",
+    "name": "Producto 10",
+    "price": 105000,
+    "discount": 0,
+    "description": "Ejemplo de producto 10",
+    "alt": "p10",
+    "category": "2"
+  },
+  {
+    "id": 11,
+    "image": "http://localhost:port/product/11.jpg",
+    "name": "Producto 11",
+    "price": 115000,
+    "discount": 0,
+    "description": "Ejemplo de producto 11",
+    "alt": "p11",
+    "category": "3"
+  },
+  {
+    "id": 12,
+    "image": "http://localhost:port/product/12.jpg",
+    "name": "Producto 12",
+    "price": 125000,
+    "discount": 0,
+    "description": "Ejemplo de producto 12",
+    "alt": "p12",
+    "category": "4"
+  }
+]

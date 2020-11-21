@@ -1,6 +1,4 @@
-package api
-
-import "github.com/kataras/iris/v12"
+package kafka
 
 /**
  * sisdis was developed by Jose Buelvas (ihojose)
@@ -12,6 +10,4 @@ import "github.com/kataras/iris/v12"
  * @donations     buymeacoff.ee/ihojose
  */
 
-func GetRecommendation(ctx iris.Context) {
-
-}
+const clientID = "01DJQXRBDE49RGSZ87B126FCB0"
