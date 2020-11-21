@@ -38,21 +38,23 @@ Desarrollo de una app distribuida por medio de microservicios en apache kafka
 
 Para ejecutar el contenedor en servicio de fondo:
 ```
-$ docker-compose up --build -d
+$ docker-compose --env-file .dev.env up --build -d
 ```
 
 Para verificar que se esté ejecutando el servicio use el comando:
 ```
-$ docker logs -f sisdis
+$ docker logs -f recommendations
 ```
 
-**NOTA:** el nombre `sisdis` puede cambiar según sea asignado por Docker al final de la compilación
+**NOTA:** el nombre `recommendations` puede cambiar según sea asignado por Docker al final de la compilación
 
 ### Kafka Topic
 Creación de Topic Kafka.
 
+**IMPORTANTE:** Para que la creación del topic funcione debe poder haber ejecutado.
+
 ```
-$ kafka-topics --create --topic recommendations --zookeeper localhost:8042 --replication-factor 1 --partitions 4
+$ MY_IP=127.0.0.1 docker run --net=host --rm confluentinc/cp-kafka:5.0.0 recommendations --create --topic fogo-chat --partitions 4 --replication-factor 2 --if-not-exists --zookeeper localhost:32181
 ```
 
 ## Api
@@ -67,9 +69,8 @@ Parámetros neviados como Query Parameters.
 | Parámetro | Tipo | Defecto | Descripción |
 | --------- | ---- | ------- | ----------- | 
 | | | | Si no se envía nada entonces se mostrarán productos al azar.
-| `u` | `string` | | Id del usuario a quien se le darán las recomandaciones.
-| `p` | `number` | | Id del producto que se está visualizando, así se hacen recomendaciones según el producto que se está visualizando.
-| `l` | `number` | 3 | Límite de la respuesta que se mostrará, este valor permite mostrar la cantidad necesaria de recomendaciones.
+| `category` | `string` | | Id de la categoría de producto.
+| `limit` | `number` | 1 | Límite de la respuesta que se mostrará, este valor permite mostrar la cantidad necesaria de recomendaciones.
 
 ### Prueba de API
 Endpoint: `{host}/recommendation`
