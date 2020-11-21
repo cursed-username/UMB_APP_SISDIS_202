@@ -1,0 +1,9 @@
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\bin\Debug\netstandard2.0\Data_Access.deps.json
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\bin\Debug\netstandard2.0\Data_Access.dll
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\bin\Debug\netstandard2.0\Data_Access.pdb
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.csprojAssemblyReference.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.AssemblyInfoInputs.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.AssemblyInfo.cs
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.csproj.CoreCompileInputs.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.dll
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\Data_Access\obj\Debug\netstandard2.0\Data_Access.pdb

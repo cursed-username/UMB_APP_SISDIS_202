@@ -1,0 +1,9 @@
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\bin\Debug\netstandard2.0\MethodParameters.deps.json
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\bin\Debug\netstandard2.0\MethodParameters.dll
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\bin\Debug\netstandard2.0\MethodParameters.pdb
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.csprojAssemblyReference.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.AssemblyInfoInputs.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.AssemblyInfo.cs
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.csproj.CoreCompileInputs.cache
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.dll
+C:\Users\FAMILIA\Desktop\David\Distribuidos\microservicios\UMB_APP_SISDIS_202\ApiMicroservicios3\MethodParameters\obj\Debug\netstandard2.0\MethodParameters.pdb
