@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iNcJQexujQQFZaafeb6Tvys7PEDllI2QT8okjfmSIeC/xYiwivp6He02cU3Uv/IbsZKuOoo6Ar+6zWzcaNW3ow==",
+  "dgSpecHash": "6v/imZBlTgn+QdCm7vDeXkdwTTO5hDuclw9GGv9SKyLVBf3S/G7I9NzPdQw3/GwChSlZUYuss33NL7UQIRmqkQ==",
   "success": true,
-  "projectFilePath": "D:\\distribuidos\\UMB_APP_SISDIS_202\\ApiMicroservicios3\\MethodParameters\\MethodParameters.csproj",
+  "projectFilePath": "C:\\Users\\FAMILIA\\Desktop\\David\\Distribuidos\\microservicios\\UMB_APP_SISDIS_202\\ApiMicroservicios3\\MethodParameters\\MethodParameters.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\FAMILIA\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\FAMILIA\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
