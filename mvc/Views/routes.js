@@ -5,16 +5,15 @@ const {Shipping}=require('./Sequelize');
 const {Country}=require('./Sequelize');
 
 //configuracion de kafka
-//const client=new kafka.KafkaClient({kafkaHost:'127.0.0.1:9092'});
-//consumer
-//var producer=new kafka.Producer(client);
+const client=new kafka.KafkaClient({kafkaHost:'127.0.0.1:9092'});
+//producer
+var producer=new kafka.Producer(client);
 //mostrar las ubicaciones disponibles
 app.get('/shipping',(req,res)=>{
     var paises="";
     Country.findAll()
     .then(countries=>{
         countries.forEach(country=>{
-            console.log(country.pais);
             if(country.pais!="Rusia"){
                 paises+=" "+country.pais+" , ";
             }else{
